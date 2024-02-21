@@ -1,0 +1,18 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Alli profile",
+  "main": "./src/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
+  },
+  "author": "Abdillah Alli",
+  "license": "ISC",
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
