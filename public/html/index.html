@@ -22,14 +22,14 @@
         #hello {
             font-family: "Montserrat", sans-serif;
             font-optical-sizing: auto;
-            font-weight: 500;
+            font-weight: 600;
             font-style: normal;
         }
     </style>
 </head>
 <body>
-    <header class="flex justify-evenly backdrop-blur-sm bg-[#1B1A55] p-5">
-        <a href="index.html" class="text-slate-100 text-center text-2xl hover:text-slate-200 font-bold">Abdillah Alli</a>
+    <header class="flex justify-around backdrop-blur-sm bg-[#1B1A55] p-5">
+        <a href="index.html" class="text-slate-100 text-center text-2xl hover:text-slate-200 font-bold">Naila Safa</a>
         <ul class="text-slate-100 flex justify-around w-[30%]">
             <li class="hover-animation"><a href="">Home</a></li>
             <li class="hover-animation"><a href="">About</a></li>
@@ -38,12 +38,12 @@
         </ul>
     </header>
     <!-- home -->
-    <div id="introuction" class="flex flex-col justify-center items-center p-3 h-[90vh] bg-[#070F2B]">
-        <div class="flex justify-around items-center flex-row-reverse w-9/12 text-slate-100 absolute z-10" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000">
+    <div id="introuction" class="flex flex-col justify-center items-center p-3 h-[90vh] bg-gradient-to-br from-[#070F2B] to-[#050a53] via-10%">
+        <div class="flex justify-between items-center flex-row-reverse w-10/12 text-slate-100 absolute z-10" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000">
             <div class="flex flex-col">
                 <h2 id="hello" class="text-center items-center w-max h-max text-6xl">Hello, Guyss!</h2>
                 <h3 id="my-name" class="text-center items-center w-max h-max text-[2.5rem] mt-2"></h3>
-                <p>I have experince in software development more than 3 years with spring framework.</p>
+                <p class="text-slate-100">I have experince in software development more than 3 years with spring framework.</p>
                 <button class="max-w-max p-2 mt-5 border-solid border-[1px] border-slate-100 rounded-md hover:text-slate-800 hover:bg-slate-100">Download My CV</button>
                 <div class="social-media flex justify-start mt-3">
                     <a href="#" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48"><path fill="#f55376" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20 c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20 C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fac8d5" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5 s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fac8d5"></circle><path fill="#fac8d5" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12 C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18 z"></path></svg></a>
@@ -58,15 +58,15 @@
             </div>
         </div>
     </div>
-    <div class="h-[90vh] w-[26%] bg-[#535C91] absolute top-[4.5rem]" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000"></div>
+    <div class="h-[90vh] w-[20%] bg-[#535C91] absolute top-[4.5rem]" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000"></div>
 
     <!-- about -->
 
-    <div class="about-me items-center flex justify-center mt-4 mb-4">
-        <div class="card border-solid border-[1px] border-slate-400 shadow-md rounded-2xl w-[60%] p-3">
-            <h1 class="text-5xl mb-3">About me</h1>
+    <div class="about-me items-center flex p-4 bg-gradient-to-bl from-[#050a53] to-[#070F2B]">
+        <div class="card w-[60%] p-3 text-slate-100">
+            <h1 class="text-4xl mb-3 underline">About me</h1>
 
-            <div class="education">
+            <div class="education" data-aos="fade-left">
                 <div class="flex items-center">
                     <div class="w-3 h-3 bg-slate-500 rounded-full mr-2"></div>
                     <h4 class="text-2xl">Education</h4>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             
-            <div class="hobbies">
+            <div class="hobbies" data-aos="fade-right">
                 <div class="flex items-center">
                     <div class="w-3 h-3 bg-slate-500 rounded-full mr-2"></div>
                     <h4 class="text-2xl">Hobbies</h4>
@@ -87,16 +87,136 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae dignissimos neque blanditiis! Eaque, explicabo deserunt voluptas unde cupiditate, ducimus magni assumenda enim dolores sunt dicta! Accusamus saepe dolores veniam, quos minima esse eos quidem recusandae vitae commodi sunt tenetur cumque mollitia unde nemo illum dicta? Voluptatum corporis voluptate illum et odio dolore minima perferendis ex incidunt a, expedita, velit at. Reiciendis illo repellat tempore corrupti culpa deleniti assumenda vitae, tenetur, earum eaque repudiandae veritatis ducimus fugit ab maxime accusantium fugiat totam inventore aliquid, consectetur facilis. Natus quam iure temporibus perferendis, debitis ullam rerum itaque ipsam eum explicabo, atque dolorum?</p>
                 </div>
             </div>
+
+            <div class="example" data-aos="fade-left">
+                <div class="flex items-center">
+                    <div class="w-3 h-3 bg-slate-500 rounded-full mr-2"></div>
+                    <h4 class="text-2xl">General</h4>
+                </div>
+                <div class="conten flex">
+                    <div class="h-[13rem] w-5 bg-slate-500 mr-2"></div>
+                    <p>I have 3 years experience in software development exzactly in Backend stack. As a backend developer, I have expertise in using various technologies to build backend applications such as Java, PostgreSQL, MySQL, Docker, as well as Spring framework and SpringBoot. I have the ability to develop or maintain robust and reliable applications and systems on the server side, as well as ensure efficient integration between various system components. With my experience and expertise, I am able to create innovative and effective backend application solutions for various software development needs. </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Experinece -->
-    <div class="experience h-[100vh] bg-[#1B1A55] flex justify-center">
-        <div class="card border-solid border-2 border-slate-100 w-3/4">
-            <h1 class="text-slate-100">Experience</h1>
+    <!-- Experience -->
+    <div class="experience h-[100vh] bg-gradient-to-bl from-[#050a53] to-[#070F2B] p-5">
+        <h1 class="text-slate-100 text-5xl text-center underline">Experience</h1>
+        <h1 class="text-9xl text-slate-100">Bingung desain nya gimana yah yangggg</h1>
+    </div>
 
+    <!-- Projects -->
+    <div class="projects h-max bg-gradient-to-bl from-[#1B1A55] to-[#050a53] p-5">
+        <h1 class="text-center text-slate-100 text-4xl underline mb-7">Projects</h1>
+        
+        <div class="flex flex-wrap justify-around">
+            <div class="bg-slate-100 h-max w-[25rem] flex shadow-md flex-col rounded-md mb-3 p-2">
+                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+                <div class="p-2">
+                    <h1 class="text-2xl font-bold text-slate-900">Book-Api</h1>
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
+                    <div class="tag mt-2">
+                        <span class="tag-style">#Java</span>
+                        <span class="tag-style">#Typescript</span>
+                        <span class="tag-style">#Spring Framework</span>
+                        <span class="tag-style">#SrpingBoot</span>
+                        <span class="tag-style">#Postgresql</span>
+                        <span class="tag-style">#Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
+                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+                <div class="p-2">
+                    <h1 class="text-2xl font-bold text-slate-900">DFS System</h1>
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
+                    <div class="tag mt-2">
+                        <span class="tag-style">#Java</span>
+                        <span class="tag-style">#Spring Framework</span>
+                        <span class="tag-style">#SrpingBoot</span>
+                        <span class="tag-style">#Postgresql</span>
+                        <span class="tag-style">#Docker</span>
+                        <span class="tag-style">#Elasticsearch</span>
+                        <span class="tag-style">#Redis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
+                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+                <div class="p-2">
+                    <h1 class="text-2xl font-bold text-slate-900">Palarel Programming</h1>
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
+                    <div class="tag mt-2">
+                        <span class="tag-style">#Java</span>
+                        <span class="tag-style">#Spring Framework</span>
+                        <span class="tag-style">#SrpingBoot</span>
+                        <span class="tag-style">#Postgresql</span>
+                        <span class="tag-style">#Docker</span>
+                        <span class="tag-style">#Elasticsearch</span>
+                        <span class="tag-style">#Redis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
+                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+                <div class="p-2">
+                    <h1 class="text-2xl font-bold text-slate-900">Web Chat</h1>
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
+                    <div class="tag mt-2">
+                        <span class="tag-style">#Java</span>
+                        <span class="tag-style">#Spring Framework</span>
+                        <span class="tag-style">#SrpingBoot</span>
+                        <span class="tag-style">#Postgresql</span>
+                        <span class="tag-style">#Docker</span>
+                        <span class="tag-style">#Elasticsearch</span>
+                        <span class="tag-style">#Kafka</span>
+                        <span class="tag-style">#Redis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
+                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+                <div class="p-2">
+                    <h1 class="text-2xl font-bold text-slate-900">Contact Management System</h1>
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
+                    <div class="tag mt-2">
+                        <span class="tag-style">#Java</span>
+                        <span class="tag-style">#Spring Framework</span>
+                        <span class="tag-style">#SrpingBoot</span>
+                        <span class="tag-style">#Postgresql</span>
+                        <span class="tag-style">#Docker</span>
+                        <span class="tag-style">#Elasticsearch</span>
+                        <span class="tag-style">#Redis</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
+                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+                <div class="p-2">
+                    <h1 class="text-2xl font-bold text-slate-900">School management System</h1>
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
+                    <div class="tag mt-2">
+                        <span class="tag-style">#Java</span>
+                        <span class="tag-style">#Spring Framework</span>
+                        <span class="tag-style">#SrpingBoot</span>
+                        <span class="tag-style">#Postgresql</span>
+                        <span class="tag-style">#Docker</span>
+                        <span class="tag-style">#Elasticsearch</span>
+                        <span class="tag-style">#Redis</span>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
+    <!-- Contact -->
+    <div class="contact h-[100vh] bg-teal-700">
+        <h1 class="text-9xl text-slate-100">Bingung desain nya gimana yah yangggg</h1>
+    </div>
+    <!-- Footer -->
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/typeit@8.8.3/dist/index.umd.js"></script>
