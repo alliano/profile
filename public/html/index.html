@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat:ital,wght@0,600;1,600&family=Shantell+Sans&display=swap" rel="stylesheet">
     <style>
         #my-name {
             font-family: "Londrina Outline", sans-serif;
@@ -25,6 +28,16 @@
             font-weight: 600;
             font-style: normal;
         }
+        #text-experience {
+            font-family: "Shantell Sans", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "BNCE" 0,
+                "INFM" 0,
+                "SPAC" 0;
+        }
     </style>
 </head>
 <body>
@@ -32,8 +45,9 @@
         <a href="index.html" class="text-slate-100 text-center text-2xl hover:text-slate-200 font-bold">Naila Safa</a>
         <ul class="text-slate-100 flex justify-around w-[30%]">
             <li class="hover-animation"><a href="">Home</a></li>
-            <li class="hover-animation"><a href="">About</a></li>
-            <li class="hover-animation"><a href="">Experience</a></li>
+            <li class="hover-animation"><a href="#about-me">About</a></li>
+            <li class="hover-animation"><a href="#experience">Experience</a></li>
+            <li class="hover-animation"><a href="#projects">Projects</a></li>
             <li class="hover-animation"><a href="">Contact</a></li>
         </ul>
     </header>
@@ -61,30 +75,18 @@
     <div class="h-[90vh] w-[20%] bg-[#535C91] absolute top-[4.5rem]" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000"></div>
 
     <!-- about -->
-
     <div class="about-me items-center flex p-4 bg-gradient-to-bl from-[#050a53] to-[#070F2B]">
         <div class="card w-[60%] p-3 text-slate-100">
-            <h1 class="text-4xl mb-3 underline">About me</h1>
+            <h1 id="about-me" class="text-4xl mb-3 underline" data-aos="fade-up" data-aos-duration="500">About me</h1>
 
             <div class="education" data-aos="fade-left">
                 <div class="flex items-center">
                     <div class="w-3 h-3 bg-slate-500 rounded-full mr-2"></div>
                     <h4 class="text-2xl">Education</h4>
                 </div>
-                <div class="conten flex">
-                    <div class="h-[13rem] w-5 bg-slate-500 mr-2"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae dignissimos neque blanditiis! Eaque, explicabo deserunt voluptas unde cupiditate, ducimus magni assumenda enim dolores sunt dicta! Accusamus saepe dolores veniam, quos minima esse eos quidem recusandae vitae commodi sunt tenetur cumque mollitia unde nemo illum dicta? Voluptatum corporis voluptate illum et odio dolore minima perferendis ex incidunt a, expedita, velit at. Reiciendis illo repellat tempore corrupti culpa deleniti assumenda vitae, tenetur, earum eaque repudiandae veritatis ducimus fugit ab maxime accusantium fugiat totam inventore aliquid, consectetur facilis. Natus quam iure temporibus perferendis, debitis ullam rerum itaque ipsam eum explicabo, atque dolorum?</p>
-                </div>
-            </div>
-            
-            <div class="hobbies" data-aos="fade-right">
-                <div class="flex items-center">
-                    <div class="w-3 h-3 bg-slate-500 rounded-full mr-2"></div>
-                    <h4 class="text-2xl">Hobbies</h4>
-                </div>
-                <div class="conten flex">
-                    <div class="h-[13rem] w-5 bg-slate-500 mr-2"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae dignissimos neque blanditiis! Eaque, explicabo deserunt voluptas unde cupiditate, ducimus magni assumenda enim dolores sunt dicta! Accusamus saepe dolores veniam, quos minima esse eos quidem recusandae vitae commodi sunt tenetur cumque mollitia unde nemo illum dicta? Voluptatum corporis voluptate illum et odio dolore minima perferendis ex incidunt a, expedita, velit at. Reiciendis illo repellat tempore corrupti culpa deleniti assumenda vitae, tenetur, earum eaque repudiandae veritatis ducimus fugit ab maxime accusantium fugiat totam inventore aliquid, consectetur facilis. Natus quam iure temporibus perferendis, debitis ullam rerum itaque ipsam eum explicabo, atque dolorum?</p>
+                <div class="conten flex p-1">
+                    <div class="h-[8rem] w-2 bg-slate-500 mr-2"></div>
+                    <p>I am an undergraduate student at Open High University majoring in Information Systems. I am very enthusiastic about learning information technology and related systems. I am always looking for ways to develop an understanding of information systems and how it can be applied in various industries. I also have a strong desire to become a professional skilled in managing and optimizing information systems to achieve business and technological goals.</p>
                 </div>
             </div>
 
@@ -93,8 +95,8 @@
                     <div class="w-3 h-3 bg-slate-500 rounded-full mr-2"></div>
                     <h4 class="text-2xl">General</h4>
                 </div>
-                <div class="conten flex">
-                    <div class="h-[13rem] w-5 bg-slate-500 mr-2"></div>
+                <div class="conten flex p-1">
+                    <div class="h-[11rem] w-3 bg-slate-500 mr-2"></div>
                     <p>I have 3 years experience in software development exzactly in Backend stack. As a backend developer, I have expertise in using various technologies to build backend applications such as Java, PostgreSQL, MySQL, Docker, as well as Spring framework and SpringBoot. I have the ability to develop or maintain robust and reliable applications and systems on the server side, as well as ensure efficient integration between various system components. With my experience and expertise, I am able to create innovative and effective backend application solutions for various software development needs. </p>
                 </div>
             </div>
@@ -102,18 +104,60 @@
     </div>
 
     <!-- Experience -->
-    <div class="experience h-[100vh] bg-gradient-to-bl from-[#050a53] to-[#070F2B] p-5">
-        <h1 class="text-slate-100 text-5xl text-center underline">Experience</h1>
-        <h1 class="text-9xl text-slate-100">Bingung desain nya gimana yah yangggg</h1>
+    <div class="experience h-max bg-gradient-to-bl from-[#050a53] to-[#070F2B] py-5 flex flex-col items-center">
+        <h1 id="experience" class="text-slate-100 text-4xl text-center underline" data-aos="fade-up" data-aos-duration="500">Experiences</h1>
+        
+        <div class="w-full flex items-center text-4xl justify-evenly">
+            <img src="../img/java-14.svg" alt="java" class="w-1/4 h-1/4" data-aos="fade-left">
+            <div class="w-1/2" data-aos="fade-right">
+                <p id="text-experience" class="text-slate-100 text-center">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, amet doloremque. Aut consequatur esse praesentium earum labore cupiditate alias quos. "</p>
+            </div>
+        </div>
+
+        <div class="w-full flex items-center text-4xl justify-evenly flex-row-reverse">
+            <img src="../img/spring-3.svg" alt="java" class="w-1/4 h-1/4" data-aos="fade-left">
+            <div class="w-1/2" data-aos="fade-right">
+                <p id="text-experience" class="text-slate-100 text-center">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, amet doloremque. Aut consequatur esse praesentium earum labore cupiditate alias quos. "</p>
+            </div>
+        </div>
+        
+        <div class="w-full flex items-center text-4xl justify-evenly">
+            <img src="../img/postgresql.svg" alt="java" class="w-1/4 h-1/4" data-aos="fade-left">
+            <div class="w-1/2" data-aos="fade-right">
+                <p id="text-experience" class="text-slate-100 text-center">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, amet doloremque. Aut consequatur esse praesentium earum labore cupiditate alias quos. "</p>
+            </div>
+        </div>
+        
+        <div class="w-full flex items-center text-4xl justify-evenly flex-row-reverse">
+            <img src="../img/mysql-logo.svg" alt="java" class="w-1/4 h-1/4" data-aos="fade-left">
+            <div class="w-1/2" data-aos="fade-right">
+                <p id="text-experience" class="text-slate-100 text-center">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, amet doloremque. Aut consequatur esse praesentium earum labore cupiditate alias quos. "</p>
+            </div>
+        </div>
+        
+        <div class="w-full flex items-center text-4xl justify-evenly">
+            <img src="../img/docker-4.svg" alt="java" class="w-1/4 h-1/4" data-aos="fade-left">
+            <div class="w-1/2" data-aos="fade-right">
+                <p id="text-experience" class="text-slate-100 text-center">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, amet doloremque. Aut consequatur esse praesentium earum labore cupiditate alias quos. "</p>
+            </div>
+        </div>
+
+        <div class="w-full flex items-center text-4xl justify-evenly flex-row-reverse">
+            <img src="../img/tux.svg" alt="java" class="w-1/4 h-1/4" data-aos="fade-left">
+            <div class="w-1/2" data-aos="fade-right">
+                <p id="text-experience" class="text-slate-100 text-center">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, amet doloremque. Aut consequatur esse praesentium earum labore cupiditate alias quos. "</p>
+            </div>
+        </div>
+
     </div>
 
     <!-- Projects -->
     <div class="projects h-max bg-gradient-to-bl from-[#1B1A55] to-[#050a53] p-5">
-        <h1 class="text-center text-slate-100 text-4xl underline mb-7">Projects</h1>
+        <h1 id="projects" class="text-center text-slate-100 text-4xl underline mb-7" data-aos="fade-up" data-aos-duration="500">Projects</h1>
         
         <div class="flex flex-wrap justify-around">
-            <div class="bg-slate-100 h-max w-[25rem] flex shadow-md flex-col rounded-md mb-3 p-2">
-                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+            <div class="bg-slate-100 h-max w-[25rem] flex shadow-md flex-col rounded-md mb-3 p-2" data-aos="fade-up" data-aos-duration="500">
+                <img src="../img/naila.jpeg" alt="" class="h-[14rem] w-[14] object-cover rounded-sm">
                 <div class="p-2">
                     <h1 class="text-2xl font-bold text-slate-900">Book-Api</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
@@ -128,8 +172,8 @@
                 </div>
             </div>
 
-            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
-                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2" data-aos="fade-up" data-aos-duration="500">
+                <img src="../img/naila.jpeg" alt="" class="h-[14rem] w-[14] object-cover rounded-sm">
                 <div class="p-2">
                     <h1 class="text-2xl font-bold text-slate-900">DFS System</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
@@ -144,8 +188,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
-                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2" data-aos="fade-up" data-aos-duration="500">
+                <img src="../img/naila.jpeg" alt="" class="h-[14rem] w-[14] object-cover rounded-sm">
                 <div class="p-2">
                     <h1 class="text-2xl font-bold text-slate-900">Palarel Programming</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
@@ -160,8 +204,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
-                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2" data-aos="fade-up" data-aos-duration="500">
+                <img src="../img/naila.jpeg" alt="" class="h-[14rem] w-[14] object-cover rounded-sm">
                 <div class="p-2">
                     <h1 class="text-2xl font-bold text-slate-900">Web Chat</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
@@ -177,8 +221,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
-                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2" data-aos="fade-up" data-aos-duration="500">
+                <img src="../img/naila.jpeg" alt="" class="h-[14rem] w-[14] object-cover rounded-sm">
                 <div class="p-2">
                     <h1 class="text-2xl font-bold text-slate-900">Contact Management System</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
@@ -193,8 +237,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2">
-                <img src="../img/naila.jpeg" alt="" class="h-[16rem] object-cover rounded-l-md">
+            <div class="bg-slate-100 h-max w-[25rem] flex flex-col shadow-md rounded-md mb-3 p-2" data-aos="fade-up" data-aos-duration="500">
+                <img src="../img/naila.jpeg" alt="" class="h-[14rem] w-[14] object-cover rounded-sm">
                 <div class="p-2">
                     <h1 class="text-2xl font-bold text-slate-900">School management System</h1>
                     <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis delectus ad? Architecto error itaque enim blanditiis officiis deserunt temporibus!</p>
