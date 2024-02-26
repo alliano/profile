@@ -896,6 +896,11 @@ video {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#1F2544\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 37 68 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
