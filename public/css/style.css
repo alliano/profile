@@ -594,8 +594,16 @@ video {
   top: 4.5rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .mx-2 {
@@ -684,6 +692,10 @@ video {
   height: 3rem;
 }
 
+.h-\[30vh\] {
+  height: 30vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -763,6 +775,10 @@ video {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .max-w-max {
